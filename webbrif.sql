@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 29, 2021 at 11:09 PM
+-- Generation Time: Nov 30, 2021 at 12:21 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.3.33
 
@@ -61,6 +61,7 @@ CREATE TABLE `webbrif` (
   `websitecontant` varchar(15) NOT NULL,
   `FurtherInfo` text NOT NULL,
   `Functionalities` text NOT NULL,
+  `otherfunctionalitiesordesigin` varchar(15) NOT NULL,
   `alreadydoman` varchar(150) NOT NULL,
   `firstname` varchar(100) NOT NULL,
   `loginip` varchar(100) NOT NULL,
@@ -90,7 +91,7 @@ CREATE TABLE `webbrif` (
   `colorscheme2` text NOT NULL,
   `fontsize` varchar(50) NOT NULL,
   `fontsize1` varchar(50) NOT NULL,
-  `fontsize2` int(50) NOT NULL,
+  `fontsize2` varchar(50) NOT NULL,
   `approachable` text NOT NULL,
   `mantanance` varchar(250) NOT NULL,
   `leavecomments` text NOT NULL,
@@ -125,9 +126,8 @@ CREATE TABLE `webbrif` (
 -- Dumping data for table `webbrif`
 --
 
-INSERT INTO `webbrif` (`id`, `name`, `organizatio`, `websitename`, `phonenumber`, `email`, `dicisionmaker`, `commentsarea`, `productionser`, `usp`, `visionobjectives`, `newweb`, `footballincrease`, `increaseonlinesell`, `sellproductiononline`, `productiveservice`, `collectioninfo`, `increasemimbership`, `showportfolio`, `increasevisitor`, `other`, `companyname1`, `comments1`, `companyname2`, `comments2`, `companyname3`, `comments3`, `productcompetition`, `permissiontotrade`, `imagewebsite`, `websitecontant`, `FurtherInfo`, `Functionalities`, `alreadydoman`, `firstname`, `loginip`, `otherinfor`, `mainpage`, `Subpage`, `homepage`, `formpage`, `aboutus`, `aboutus1`, `contactus`, `contactus1`, `revies`, `revoes1`, `howmanyproduct`, `clientbuyerproduct`, `usingpaypal`, `shoporshopies`, `storecontrol`, `accountpackages`, `foreigncurrency`, `websitetheme`, `websitetheme1`, `websitetheme2`, `colorscheme`, `colorscheme1`, `colorscheme2`, `fontsize`, `fontsize1`, `fontsize2`, `approachable`, `mantanance`, `leavecomments`, `cms1`, `anyanimation`, `facebook`, `twitter`, `instagram`, `pintrest`, `linkedin`, `othersocialmedia`, `othercommentsnow`, `link1`, `link2`, `link3`, `link4`, `link5`, `link6`, `link7`, `link8`, `link9`, `mediamanagement`, `anyothercomments`, `anyothercomments1`, `anyothercomments2`, `anyothercomments3`, `anyothercomments4`, `complatedetails`) VALUES
-(18, 'Rasheed Ur Rehman', 'Internative', 'Internative.com', '546546', 'muhsin@gmail.com', 'fghghfdh', 'asdf', 'sadf', 'dsaf', 'asdf', 'New Webiste', 'yes', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', 'etc@internativelabs.com', 'asdf', 'etc@internativelabs.com', 'adfs', 'etc@internativelabs.com', 'asdf', 'dsafsad', 'adsf', 'NO', 'NO', 'fdhfsdg', 'Blog, Ecommerce, Vadio Integration, Price Comperission, Survey Integration, ', 'asdfad', 'adfrwe', 'asdgxcvb', 'cxghfh', 'df', 'fsdg', 'asdf', 'fsdgd', 'asdf', 'sadf', 'agtaf', 'asdf', 'ahgbg', 'sadf', 'dsaf', 'adsf', 'ghjgfyhjgf', 'fyjufhjf', 'ghhjnvbh', 'dghdgh', 'dghsftysfdg', 'sdfgsfdg', 'sfdgfsdv', 'fdgtfdsgx', 'sdfgsdfg', 'sdfgd', 'fgfgfsdg', 'ghbncvb', 'dghfsdgs', 0, 'Approachable, Corporate Modern, Authoritative, Playful Elegant, Sophisticated, Caring, Stylish, Simple Clean Slik, ', 'NO', 'fdgadgt', 'NO', 'sdfgyrsety', 'No', 'No', 'No', 'No', 'No', 'No', 'gfhg', 'gfgd', 'gsfdgxzfg', 'gfsdf', 'sfdg', 'sdfg', 'gfsdg', 'gsygsdfg', 'gfdg', 'fgs', 'NO', 'sdfgxfcgaesry', 'fdysdfjcgnx', 'xdghyusbfs', 'gfsdfdga', 'sdADfrSETR', 'GTJUTSHB'),
-(19, 'asefr', 'wer', 'wqer', 'wer', 'rasheedurrehman71@gmail.com', 'weafr', 'sadf', 'sadf', 'sadf', 'sadf', 'New Webiste', 'yes', 'YES', 'YES', 'YES', 'YES', '', '', '', 'YES', 'asdf', 'asdf', 'etc@internativelabs.com', 'sadf', 'etc@internativelabs.com', 'asdf', 'asdf', 'asdf', 'YES', 'YES', 'asdf', 'Blog, Ecommerce, Multi Langauge, Photo Gallery, ', 'ads', 'sadf', 'asdf', 'asdf', 'asdf', '', 'asdfsadf', 'asdf', 'asdfasdf', 'asdf', 'sa', 'asdf', 'adf', 'df', 'asdf', 'sdaf', 'adf', 'dsf', 'adf', 'adsf', 'asdf', 'asd', 'sdf', 'asdf', 'asdf', 'asd', 'asd', 'sa', 'sa', 0, 'Authoritative, Playful Elegant, Funcky, ', 'YES', 'sad', 'YES', 'sad', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'sad', 'SD', 'sad', 'sad', 'sd', 'sad', 'sad', 'gsd', 'sad', 'sdf', 'YES', 'FG', 'SDFG', 'HGDSDFG', 'SFDG', 'SDFG', 'FSDG');
+INSERT INTO `webbrif` (`id`, `name`, `organizatio`, `websitename`, `phonenumber`, `email`, `dicisionmaker`, `commentsarea`, `productionser`, `usp`, `visionobjectives`, `newweb`, `footballincrease`, `increaseonlinesell`, `sellproductiononline`, `productiveservice`, `collectioninfo`, `increasemimbership`, `showportfolio`, `increasevisitor`, `other`, `companyname1`, `comments1`, `companyname2`, `comments2`, `companyname3`, `comments3`, `productcompetition`, `permissiontotrade`, `imagewebsite`, `websitecontant`, `FurtherInfo`, `Functionalities`, `otherfunctionalitiesordesigin`, `alreadydoman`, `firstname`, `loginip`, `otherinfor`, `mainpage`, `Subpage`, `homepage`, `formpage`, `aboutus`, `aboutus1`, `contactus`, `contactus1`, `revies`, `revoes1`, `howmanyproduct`, `clientbuyerproduct`, `usingpaypal`, `shoporshopies`, `storecontrol`, `accountpackages`, `foreigncurrency`, `websitetheme`, `websitetheme1`, `websitetheme2`, `colorscheme`, `colorscheme1`, `colorscheme2`, `fontsize`, `fontsize1`, `fontsize2`, `approachable`, `mantanance`, `leavecomments`, `cms1`, `anyanimation`, `facebook`, `twitter`, `instagram`, `pintrest`, `linkedin`, `othersocialmedia`, `othercommentsnow`, `link1`, `link2`, `link3`, `link4`, `link5`, `link6`, `link7`, `link8`, `link9`, `mediamanagement`, `anyothercomments`, `anyothercomments1`, `anyothercomments2`, `anyothercomments3`, `anyothercomments4`, `complatedetails`) VALUES
+(25, 'Rasheed Ur Rehman', 'Internative', 'Internative.com', '546546', 'rasheedurrehman71@gmail.com', 'fghghfdh', 'SAFDJH', 'JUIOU8U', 'JKHUIY', 'IUIOUIO', 'New Webiste', 'yes', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', 'etc@internativelabs.com', 'ERTREWHY', 'etc@internativelabs.com', 'RTY', 'etc@internativelabs.com', 'GFDG', 'TYIYUI', 'TYUTRH', 'YES', 'YES', 'GFHJGFHJ', 'Blog, Clander, Ecommerce, Cart/Online, Store, Vadio Integration, FAQs, Flash Animation, Font Style Change, Multi Langauge, News Latter, PDF Form, Portfolio, Upload File, Illustration, Download, Price Comperission, Print Friendly, Social Network, SSL Certificate, Online Booking, Page Management, Case Studies, ', 'YES', 'FGHJ', 'FGHJGF', 'FHJ', 'FHJ', 'FHJ', 'FGHJ', 'FHJ', 'FGHJ', 'FGHJ', 'FGHJ', 'FGHJ', 'FGHJ', 'FHJ', 'FHJ', 'FGHJ', 'FGHJ', 'FHJ', 'HJ', 'FHJ', 'TYUJGF', 'JJHFJFGHJ', 'YUHJ', 'GFHJKRK', 'FGHJFHJ', 'TYUFGH', 'DFHGHY', 'VCTRHDHUJ', 'DFHG', 'DFGHSTRHD', 'GTHSH', 'Approachable, High tech, Corporate Modern, Authoritative, Natural Organic, Credible/ Expert, Playful Elegant, Sophisticated, Fresh Helpful, Funcky, Caring, Stylish, Humble, Prestigious, Simple Clean Slik, High tech, ', 'YES', 'DFGH', 'YES', 'DGHH', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'DFGH', 'DGH', 'FDG', 'DFGH', 'SRTDGF', 'DGH', 'DGH', 'DFGHFDG', 'SF', 'DFSGHD', 'YES', 'DSFG', 'FDHGFDG', 'FDSGFG', 'SDFG', 'DFSG', 'JHYSREGY');
 
 --
 -- Indexes for dumped tables
@@ -147,7 +147,7 @@ ALTER TABLE `webbrif`
 -- AUTO_INCREMENT for table `webbrif`
 --
 ALTER TABLE `webbrif`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

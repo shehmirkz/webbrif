@@ -44,7 +44,7 @@ foreach($funct as $functionalities){
     $fun .= $functionalities.", ";
 
 }
-//missing
+$otherfunctionalitiesordesigin=mysqli_real_escape_string($connection ,$_POST['otherfunctionalitiesordesign']);
 
 $alreadydoman=mysqli_real_escape_string($connection ,$_POST['alreadydomain']);
 $Firstname=mysqli_real_escape_string($connection ,$_POST['fname']);
@@ -101,7 +101,6 @@ $pintrest=$_POST['pintrest'];
 $linkedin=$_POST['linkedin'];
 $othersocialmedia=$_POST['othersoial'];
 $othercomments=$_POST['othercomments'];
-
 $link1=mysqli_real_escape_string($connection ,$_POST['link1']);
 $link2=mysqli_real_escape_string($connection ,$_POST['link2']);
 $link3=mysqli_real_escape_string($connection ,$_POST['link3']);
@@ -122,8 +121,8 @@ $complatedetail=mysqli_real_escape_string($connection ,$_POST['fulldetail']);
 
 
 
-$sql="INSERT INTO `webbrif`(`name`,`organizatio`,`websitename`, `phonenumber`, `email`, `dicisionmaker`, `commentsarea`, `productionser`, `usp`, `visionobjectives`, `newweb`, `footballincrease`, `increaseonlinesell`, `sellproductiononline`, `productiveservice`, `collectioninfo`, `increasemimbership`, `showportfolio`, `increasevisitor`, `other`, `companyname1`, `comments1`, `companyname2`, `comments2`, `companyname3`, `comments3`, `productcompetition`, `permissiontotrade`, `imagewebsite`, `websitecontant`,`FurtherInfo`, `Functionalities`, `alreadydoman`, `firstname`, `loginip`, `otherinfor`, `mainpage`, `Subpage`, `homepage`, `formpage`, `aboutus`, `aboutus1`, `contactus`, `contactus1`, `revies`, `revoes1`, `howmanyproduct`, `clientbuyerproduct`, `usingpaypal`, `shoporshopies`, `storecontrol`, `accountpackages`, `foreigncurrency`, `websitetheme`, `websitetheme1`, `websitetheme2`, `colorscheme`, `colorscheme1`, `colorscheme2`, `fontsize`, `fontsize1`, `fontsize2`,`approachable`, `mantanance`, `leavecomments`, `cms1`, `anyanimation`, `facebook`, `twitter`, `instagram`, `pintrest`, `linkedin`, `othersocialmedia`, `othercommentsnow`, `link1`, `link2`, `link3`, `link4`, `link5`, `link6`, `link7`, `link8`, `link9`, `mediamanagement`, `anyothercomments`, `anyothercomments1`, `anyothercomments2`, `anyothercomments3`, `anyothercomments4`, `complatedetails`) 
-VALUES ('$name','$organization','$website','$phonenum','$email','$desicionmaker','$commentsarea','$productservice','$usp','$visionobjectives','$websiteorrevamp','$footballincrease','$increaseonlinesell','$sellproductonline','$productiveservice','$collectinfo','$increasemimbership','$showportfolio','$increasevisitor','$other','$companyname1','$comments1','$companyname2','$comments2','$companyname3','$comments3','$productcompetition','$permissiontotrade','$Imagewebsite','$websitecontant','$furtherinfor','$fun','$alreadydoman','$Firstname','$loginipinfor','$otherinfo','$mainpage','$subpage','$homepage','$formpage','$aboutus','$aboutus1','$contactus','$conactus1','$revies','$revies1','$howmanyproduct','$clientbuyproduc','$usingpaypal','$shoporshopies','$storecontrol','$accountpackages','$foreigncurrency','$websitetheme','$websitetheme1','$websitetheme2','$colorschame','$colorschame1','$colorschame2','$fontsize','$fontsize1','$fontsize2','$aproach','$mantanance','$leavecomments','$cms1','$anyanimation','$facebook','$twiter','$instagram','$pintrest','$linkedin','$othersocialmedia','$othercomments','$link1','$link2','$link3','$link4','$link5','$link6','$link7','$link8','$link9','$mediamanagement','$anyothercomments','$anyothercomments1','$anyothercomments2','$anyothercomments3','$anyothercomments4','$complatedetail')";
+$sql="INSERT INTO `webbrif`(`name`,`organizatio`,`websitename`, `phonenumber`, `email`, `dicisionmaker`, `commentsarea`, `productionser`, `usp`, `visionobjectives`, `newweb`, `footballincrease`, `increaseonlinesell`, `sellproductiononline`, `productiveservice`, `collectioninfo`, `increasemimbership`, `showportfolio`, `increasevisitor`, `other`, `companyname1`, `comments1`, `companyname2`, `comments2`, `companyname3`, `comments3`, `productcompetition`, `permissiontotrade`, `imagewebsite`, `websitecontant`,`FurtherInfo`, `Functionalities`, `otherfunctionalitiesordesigin`, `alreadydoman`, `firstname`, `loginip`, `otherinfor`, `mainpage`, `Subpage`, `homepage`, `formpage`, `aboutus`, `aboutus1`, `contactus`, `contactus1`, `revies`, `revoes1`, `howmanyproduct`, `clientbuyerproduct`, `usingpaypal`, `shoporshopies`, `storecontrol`, `accountpackages`, `foreigncurrency`, `websitetheme`, `websitetheme1`, `websitetheme2`, `colorscheme`, `colorscheme1`, `colorscheme2`, `fontsize`, `fontsize1`, `fontsize2`,`approachable`, `mantanance`, `leavecomments`, `cms1`, `anyanimation`, `facebook`, `twitter`, `instagram`, `pintrest`, `linkedin`, `othersocialmedia`, `othercommentsnow`, `link1`, `link2`, `link3`, `link4`, `link5`, `link6`, `link7`, `link8`, `link9`, `mediamanagement`, `anyothercomments`, `anyothercomments1`, `anyothercomments2`, `anyothercomments3`, `anyothercomments4`, `complatedetails`) 
+VALUES ('$name','$organization','$website','$phonenum','$email','$desicionmaker','$commentsarea','$productservice','$usp','$visionobjectives','$websiteorrevamp','$footballincrease','$increaseonlinesell','$sellproductonline','$productiveservice','$collectinfo','$increasemimbership','$showportfolio','$increasevisitor','$other','$companyname1','$comments1','$companyname2','$comments2','$companyname3','$comments3','$productcompetition','$permissiontotrade','$Imagewebsite','$websitecontant','$furtherinfor','$fun','$otherfunctionalitiesordesigin','$alreadydoman','$Firstname','$loginipinfor','$otherinfo','$mainpage','$subpage','$homepage','$formpage','$aboutus','$aboutus1','$contactus','$conactus1','$revies','$revies1','$howmanyproduct','$clientbuyproduc','$usingpaypal','$shoporshopies','$storecontrol','$accountpackages','$foreigncurrency','$websitetheme','$websitetheme1','$websitetheme2','$colorschame','$colorschame1','$colorschame2','$fontsize','$fontsize1','$fontsize2','$aproach','$mantanance','$leavecomments','$cms1','$anyanimation','$facebook','$twiter','$instagram','$pintrest','$linkedin','$othersocialmedia','$othercomments','$link1','$link2','$link3','$link4','$link5','$link6','$link7','$link8','$link9','$mediamanagement','$anyothercomments','$anyothercomments1','$anyothercomments2','$anyothercomments3','$anyothercomments4','$complatedetail')";
 
 mysqli_query($connection,$sql);
 
@@ -604,8 +603,6 @@ $message = "
  <tr>
    <td colspan='2' >&nbsp;&nbsp;$complatedetail</td>
 </tr>
-
-
 </table>
 </body>
 </html>
