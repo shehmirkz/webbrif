@@ -5,13 +5,11 @@
 .heading {
     background-color: #232f3e;
     padding: 30px 294px;
-
 }
 .heading p {
     color: #fff;
     padding-right: 50px;
 }
-
 h1 {
     color: #ed922a;
     font-family: 'Quicksand', sans-serif;
@@ -35,6 +33,9 @@ h3 {
     background-color: #ed922a;
     border-color: #0d6efd;
 }
+.forms textarea {
+    resize: none;
+}
 .btn-warning {
     background-color: #eb680d !important; 
     color: #fff !important;
@@ -54,61 +55,28 @@ h3 {
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) and (max-width: 1350px ) {
-    .heading {
-        background-color: #232f3e;
-        padding: 30px 110px;
-    }
-    h1 {
-        font-weight: 700 !important;
-    }
-    h3 {
-        font-weight: 700 !important;
-    }
+    .heading {background-color: #232f3e;padding: 30px 110px;}
+    h1 {font-weight: 700 !important;}
+    h3 {font-weight: 700 !important;}
 }
 /* Portrait tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1200px) {
-    .heading {
-        background-color: #232f3e;
-        padding: 30px 110px;
-    }
-    h1 h3 {
-        font-weight: 700 !important;
-    }
+    .heading {background-color: #232f3e;padding: 30px 110px;}
+    h1{font-weight: 700 !important;}
 }
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 992px) {
-    .heading {
-        background-color: #232f3e;
-        padding: 28px 28px;
-    }
+    .heading {background-color: #232f3e;padding: 28px 28px;}
 }
 /* Landscape phones and portrait tablets */
 @media (min-width: 480px) and (max-width: 768px) {
-    .heading {
-        background-color: #232f3e;
-        padding: 2px 22px;
-    }
+    .heading {background-color: #232f3e;padding: 2px 22px;}
 }
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
-    .heading {
-        background-color: #232f3e;
-        padding: 2px 16px;
-    }
-    .input-group-text {
-        font-size: 12px !important;
-    }
-    .form-label {
-        margin-bottom: .5rem;
-        font-size: 14px;
-    }
-    label {
-        display: inline-block;
-        font-size: 14px;
-    }
-    .heading p {
-        color: #fff;
-        padding-right: 0;
-        font-size: 14px;
-    }
+    .heading {background-color: #232f3e;padding: 2px 16px;}
+    .input-group-text {font-size: 12px !important;}
+    .form-label {margin-bottom: .5rem;font-size: 14px;}
+    label {display: inline-block;font-size: 14px;}
+    .heading p {color: #fff;padding-right: 0;font-size: 14px;}
 }
