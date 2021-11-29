@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
+.forms {
+    background-color: #ffe0bd10;
+}
+.heading {
+    background-color: #232f3e;
+    padding: 30px 294px;
+
+}
+.heading p {
+    color: #fff;
+    padding-right: 50px;
+}
+
+h1 {
+    color: #ed922a;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}
+h3 {
+    color: #f8992d;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    padding: 20px 0;
+    text-decoration: underline;
+}
+.form-control:focus {
+    color: #1b1815;
+    background-color: #fff;
+    border-color: #ecc69a;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(239 180 106 / 38%);
+}
+.form-check-input:checked {
+    background-color: #ed922a;
+    border-color: #0d6efd;
+}
+.btn-warning {
+    background-color: #eb680d !important; 
+    color: #fff !important;
+    border-color: #232f3e;
+    margin-bottom: 20px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+.btn-warning:hover {
+    background-color: #232f3e !important;
+    border-color: #eb680d;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////Media Query For Responsive//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) and (max-width: 1350px ) {
+    .heading {
+        background-color: #232f3e;
+        padding: 30px 110px;
+    }
+}
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .heading {
+        background-color: #232f3e;
+        padding: 30px 110px;
+    }
+}
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 992px) {
+    .heading {
+        background-color: #232f3e;
+        padding: 28px 28px;
+    }
+}
+/* Landscape phones and portrait tablets */
+@media (min-width: 480px) and (max-width: 768px) {
+    .heading {
+        background-color: #232f3e;
+        padding: 2px 22px;
+    }
+}
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    .heading {
+        background-color: #232f3e;
+        padding: 2px 16px;
+    }
+    .input-group-text {
+        font-size: 14px;
+    }
+    .form-label {
+        margin-bottom: .5rem;
+        font-size: 14px;
+    }
+    label {
+        display: inline-block;
+        font-size: 14px;
+    }
+    .heading p {
+        color: #fff;
+        padding-right: 0;
+        font-size: 14px;
+    }
+}
